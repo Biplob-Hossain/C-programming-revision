@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main()
+{
+
+    int num1=20,num2=30, sum,mul,subs;
+    float mod,div;
+
+    sum=num1+num2;
+    
+    subs=num2-num1;
+
+    mul=num1*num2;
+    
+    mod=num2%num1;
+
+    div=num2/num1;
+
+    printf("sum of two number is %d\n",sum);
+    printf("SUbstract  is %d\n",subs);
+    printf("multiply of two number is %d\n",mul);
+    printf("Modulus of two number is %.2f\n",mod);
+    printf("Dividation of two number is %.2f\n",sum);
+
+
+}
