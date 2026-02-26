@@ -1,0 +1,13 @@
+//This is the Basic USer Input Practise
+
+#include<stdio.h>
+int main()
+{
+
+int num;
+printf("Please Enter your any number"); // ask to user enter any value
+scanf("%d ",&num); // taking input from user and stored the value of declared variable
+
+printf("Your Entered value is %d",num);
+
+}
