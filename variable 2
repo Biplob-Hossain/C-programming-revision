@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main()
+{
+
+int ID=10;
+
+int ID1=20;
+
+printf(" ID is %d\n", ID);
+
+printf("ID1 is %d\n",ID1);
+
+return 0;
+
+
+}
