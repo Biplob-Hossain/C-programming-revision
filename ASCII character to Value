@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+int main()
+{
+    char input;
+    printf("Please Enter Any Character ");
+    scanf("%c",&input);
+
+    printf("ASCII value for your Character is %d\n ",input);
+
+
+}
