@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main()
+{
+
+ int I;
+ float F;
+ double D;
+ char C;
+
+ printf(" Size of Intitger is %d\n bytes ",sizeof(I));
+ printf(" Size of float is %d\n bytes ",sizeof(F));
+ printf(" Size of doubler is %d \nbytes ",sizeof(D));
+ printf(" Size of Character is %d\n bytes ",sizeof(C));
+
+}
