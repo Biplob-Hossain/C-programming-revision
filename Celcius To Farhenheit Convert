@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main()
+{
+
+ double Farhenheit, Celcius;
+
+ printf("Enter your Celcius now \n");
+ scanf("%lf",&Celcius);
+
+ Farhenheit=(Celcius*1.8)+32;
+
+ printf("Your Temperature is now %.2lf %cF Farhenheit",Farhenheit,248);
+
+}
