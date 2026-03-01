@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+int main()
+{
+
+int input;
+printf("Please Enter any number to check Positive Negetive or Zero");
+scanf("%d",&input);
+
+{
+    if (input >0)
+    {
+        printf("This is a positive number\n");
+    }
+    else if (input<0)
+    {
+        printf("This is a negetive number\n");
+    }
+
+    else
+    printf("This is zero");
+    
+    
+
+}
+
+}
