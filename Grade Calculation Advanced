@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int main() {
+    int Math, Physics, Chem, C;
+    int isFail = 0;
+
+    printf("Please enter Marks for Math, Physics, Chemistry, and C language:\n");
+    scanf("%d %d %d %d", &Math, &Physics, &Chem, &C);
+
+    printf("\n--- Subject-wise Grades ---\n");
+
+    // Math Grade
+    printf("Math: ");
+    if (Math >= 80) printf("A+\n");
+    else if (Math >= 70) printf("A\n");
+    else if (Math >= 33) printf("Pass\n");
+    else { printf("Failed\n"); isFail = 1; }
+
+    // Physics Grade
+    printf("Physics: ");
+    if (Physics >= 80) printf("A+\n");
+    else if (Physics >= 33) printf("Pass\n");
+    else { printf("Failed\n"); isFail = 1; }
+
+    // Chemistry Grade
+    printf("Chemistry: ");
+    if (Chem >= 80) printf("A+\n");
+    else if (Chem >= 33) printf("Pass\n");
+    else { printf("Failed\n"); isFail = 1; }
+
+    // C Language Grade
+    printf("C Language: ");
+    if (C >= 80) printf("A+\n");
+    else if (C >= 33) printf("Pass\n");
+    else { printf("Failed\n"); isFail = 1; }
+
+    // --- ফাইনাল রেজাল্ট লজিক (ইজফেইল ব্লকের বাইরে) ---
+    if (isFail == 1) {
+        printf("\nFinal status: FAILED\n");
+        printf("Failed Subjects: ");
+        if (Math < 33) printf("Math ");
+        if (Physics < 33) printf("Physics ");
+        if (Chem < 33) printf("Chemistry ");
+        if (C < 33) printf("C-Language ");
+        printf("\n");
+    } 
+    else {
+        // যদি কেউ ফেইল না করে (isFail == 0)
+        float avg = (Math + Physics + Chem + C) / 4.0f;
+        printf("\nFinal Result: PASSED\nAverage Marks: %.2f\n", avg);
+    }
+
+    return 0;
+}
