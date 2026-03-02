@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<ctype.h>
+
+int main()
+{
+
+char Ch;
+printf("Enter any Upper case\n");
+scanf("%c",&Ch);
+
+if (isupper(Ch))
+{
+    printf(" After Convert Character is %c",tolower(Ch));
+}
+
+else
+printf("Please Enter any Upper Character");
+
+}
