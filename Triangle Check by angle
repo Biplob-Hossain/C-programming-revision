@@ -1,0 +1,24 @@
+// This code for check Triangle using angle
+
+#include<stdio.h>
+int main()
+{
+    int angel1,angel2,angel3;
+    double Triangle;
+    printf("Please Enter three angle for your triangle\n");
+    scanf("%d",&angel1);
+    scanf("%d",&angel2);
+    scanf("%d",&angel3);
+
+    if (angel1 + angel2 + angel3 ==180 && angel1>0 && angel2>0 && angel3>0 )
+    {
+        printf("this is a Triangle");
+    }
+    else
+    {
+        printf("This is not a Triangle");
+    }
+    
+    
+
+}
