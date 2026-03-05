@@ -1,0 +1,26 @@
+// This programm for check triangle using thrre arm value
+
+#include<stdio.h>
+
+int main()
+{
+    double A, B, C;
+
+    printf("enter three arm value for your triangle");
+
+    scanf("%lf",&A);
+    scanf("%lf",&B);
+    scanf("%lf",&C);
+
+    if (A+B>C && A+C>B && B+C>A & (A>0 && B>0 && C>0))
+    {
+        printf("This is a trangle");
+    }
+    else
+    {
+        printf("This is not a triangle");
+    }
+    
+
+
+}
