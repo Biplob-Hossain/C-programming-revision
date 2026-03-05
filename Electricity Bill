@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+
+    double unit;
+    double Bill; 
+    printf("Enter your Consumed Unit\n");
+    scanf("%lf",&unit);
+
+    if (unit<=100)
+    {
+        Bill=unit*5;
+
+        printf("Your Bill is %.2lf BDT",Bill);
+    }
+
+    else if (unit<=200)
+    {
+        Bill=(100*5) + (unit-100)*7;
+        printf("Your Bill is %.2lf ",Bill);
+    }
+    
+    else
+    {
+     
+        Bill=(100*5) + (100*7) + (unit-200)*10; 
+        printf("Your Bill is %.2lf ",Bill);
+    }
+    
+    
+    
+
+}
