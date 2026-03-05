@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<windows.h>
+
+int main()
+{
+
+ int road;
+
+ char *RED="\033[31m";
+ char *GREEN="\033[32m";
+char *YELLOW="\033[33m";
+char *RESET="\033[34m";
+
+    printf("Traffic Signal Simulation is start");
+
+ while (1)
+     {
+        for (road = 1; road <=4 ; road++)
+        {
+         printf("\n Current Road\n%d",road);
+
+         printf("%s GET READY %s\n",YELLOW,RESET);
+         Sleep(2000);
+        
+         printf("%s GO GO GO %s\n",GREEN,RESET);
+         Sleep(5000);
+
+         printf("%s STOP %s\n",RED,RESET);
+         Sleep(2000);
+ 
+         
+        }
+        
+    }
+    return 0;
+ 
+
+}
