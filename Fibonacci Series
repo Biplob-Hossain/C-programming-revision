@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int i, n, n1 = 0, n2 = 1, next;
+
+    printf("Enter how many numbers you want to see: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series: ");
+
+    for (i = 1; i <= n; i++) {
+        printf("%d, ", n1); // প্রথমে বর্তমান সংখ্যাটি প্রিন্ট করি
+        
+        next = n1 + n2;    // পরের সংখ্যাটি বের করলাম
+        n1 = n2;           // n1-কে আপডেট করলাম (পুরানো n2 এখন n1)
+        n2 = next;         // n2-কে আপডেট করলাম (নতুন পদটি এখন n2)
+    }
+
+    return 0;
+}
