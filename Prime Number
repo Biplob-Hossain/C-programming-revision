@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+
+    int N, i, flag=0;
+    printf("ENter any number to check prime or not\n");
+    scanf("%d",&N);
+
+    if (N<=1)
+    {
+       printf("This is not a Prime Numebr\n");
+       return 0;
+    }
+    
+    for ( i = 2; i <=N/2; i++)
+    {
+        if (N%i==0)
+        {
+        
+            flag=1;
+            break;
+        }
+        
+    }
+    if (flag==0)
+    {
+        printf("This is a Prime\n");
+    
+    }
+    else
+    printf("This is not a Prime");
+    
+    
+
+}
