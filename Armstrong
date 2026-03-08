@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main()
+{
+     int N, temp, rem, sum=0;
+
+     printf("ENter any Digit for sum\n");
+
+    scanf("%d",&N);
+
+    temp=N;
+    while (temp!=0)
+    {
+        rem=temp%10;
+        sum=sum+(rem*rem*rem);
+        temp=temp/10;
+    }
+    if (N==sum)
+    {
+        printf("this is a Palindrome\n");
+    }
+    else
+    printf("This is not Palindrome\n");
+    
+   
+   
+    
+
+}
